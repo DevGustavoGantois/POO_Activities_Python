@@ -21,7 +21,7 @@ A programação orientada a objetos (OOP) é um paradigma de programação que o
 
 A OOP em Python fornece uma abordagem modular e eficiente para organizar e estruturar o código, facilitando a manutenção, extensão e reutilização do software.
 
-<h2>INGLÊS<h2>
+<h2>INGLÊS-EN<h2>
 
 <h3>Class<h3>: A class is a blueprint for creating objects. It defines attributes (characteristics) and methods (behaviors) that objects of that class will have.
 
