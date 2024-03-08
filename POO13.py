@@ -77,7 +77,6 @@ class Project:
                 Type (0) Exit Program.
                 <-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=->''')
             option = int(input("Enter a option:"))
-            task = Task()
             if option == 1:
                 task_instance.add_task()
             elif option == 2:
