@@ -84,5 +84,20 @@ biblioteca.adiciona_membros(membro4)
 biblioteca.listar_livros_biblioteca()
 # Listando membros da biblioteca:
 biblioteca.listar_membros_biblioteca()
+#Emprestar Livros:
+resultado_empresitmo = biblioteca.emprestimo_livro(livro1,membro1)
+print(resultado_emprestimo)
+#Devolver um livro:
+resultado_devolucao = biblioteca.devolucao_livro(livro1,membro1)
+print(resultado_devolucao)
+#Pesquisar os livros:
+pesquisar = 'Amor na Vitrine'
+livros_encontrados = biblioteca.pesquisar_livros_titulo_id(pesquisar)
 
-#Caso queria fazer emprestimo dos livros, devolução...só instanciar as classes.
+if livros_encontrados is not None:
+    print(f'\nLivros encontrados para a pesquisa "{pesquisar}":')
+    for livro in livros_encontrados:
+        print(f'Título: {livro.titulo}, Autor:{livro.autor}, ID: {livro.id}, Status: {livro.status_emprestimo}')
+else:
+    print(f'\nNenhum livro encontrado para a pesquisa "{pesquisar}".')
+    
